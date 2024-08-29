@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <h1>HERE ARE ALL ENTRIES</h1>
+    <table>
+    {% for row in rows %}
+        <tr>
+        	<td>name : {{ row[1] }}</td>
+        	<td>phone : {{ row[2] }}</td>
+        	<td>
+        		<form action='/deregister' method='post'>
+        			<input name='name' type='hidden' value="{{ row[1] }}">
+        			<button type='submit'>Deregister</button>
+        		</form>
+    {% endfor %}
+	</table>
+
+{% endblock %}

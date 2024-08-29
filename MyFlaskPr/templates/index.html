@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+	<h1 style="text-align: center;">Registration</h1>
+	<form action='/register' method='get'>
+		<input autocomplete="off" autofocus name='name' type='text' placeholder="Name">
+		<input autocomplete="off" autofocus name='phone' type='text' placeholder="Phone no.">
+		<button type='submit'>SUBMIT</button>
+	</form>
+	<br>
+	<hr>
+	<form action='/registerant' method='get'>
+		<button type='submit'>View Entries</button>
+	</form>
+
+{% endblock %}
