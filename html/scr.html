@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+	<head>
+		<title>Scorecard</title>
+
+		<style>
+			header
+			{
+				text-align: center;
+				font-size: 300%;
+			}
+			table {
+
+				margin-left: auto;
+				margin-right: auto;
+				border : 2px solid black;
+				text-align : center;
+				height : 200%;
+				width: 50%;
+				font-size : 300%;
+
+			}
+			td
+			{
+				border : 2px solid black;
+			}
+			button
+			{
+				font-size : 100%;
+				
+			}
+			.redd
+			{
+				background-color: crimson;
+			}
+			.blue
+			{
+				background-color: lightblue;
+			}
+
+		</style>
+
+	</head>
+	<body>
+		<header>Red Team vs Blue Team</header>
+		<br>
+		<hr>
+		<br>
+		<table>
+			<tr>
+				<td>Team 1</td>
+				<td>Team 2</td>
+			</tr>
+
+			<tr>
+				<td id='num1'>0</td>
+				<td id='num2'>0</td>
+			</tr>
+
+			<tr>
+				<td><button class='redd' id="button1">Add</button></td>
+				<td><button class='blue' id="button2">Add</button></td>
+			</tr>
+		</table>
+
+		<script>
+
+			let point1 = 0;
+			let point2 = 0;
+
+			document.querySelector('#button1').onclick = function()
+			{
+				if (point1 < 5)
+				{
+					point1 = point1 + 1
+					document.querySelector('#num1').innerHTML = point1
+				}
+				else 
+				{
+					alert("team 1 won")
+				}
+			}
+
+			document.querySelector('#button2').onclick = function()
+			{
+				point2 = point2 + 1
+				document.querySelector('#num2').innerHTML = point2
+			}
+		</script>
+
+	</body>
+</html>
+
+

@@ -1,0 +1,10 @@
+uint8_t - simple type of int storage which can only store int from 0 to 255 useful in storing data of photos and audio file
+
+strcasecmp - compares string regaredless of the case (A or a is same) present in <strings.h>
+
+strcmp - compares but A and a are diff present in <string.h>
+
+strcpy(<desination>, <origin>) - copies one to another, C can't copy like python in <string.h>
+
+malloc() and free() in <stdlib.h>
+

@@ -1,0 +1,75 @@
+/* styles.css */
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    
+    align-items: center;
+    height: 100px;
+    margin: 0;
+    color: black;
+}
+
+/* Header styling */
+header {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Player status styling */
+#updatee {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Table styling */
+table {
+    border: 2px solid black;
+    font-size: 2rem;
+    margin: 0 auto;
+    background-color: black;
+    border-radius: 10px;
+}
+
+/* Button styling for the game board */
+button {
+    width: 120px;
+    height: 120px;
+    font-size: 2rem;
+    color: white;
+    background-color: grey;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: lightgrey;
+}
+
+
+
+/* Cell styling */
+td {
+    border: 2px;
+    padding: 0;
+}
+
+/* Footer for winner announcement */
+#winner {
+    font-size: 2rem;
+    margin-top: 20px;
+    text-align: center;
+    color: black;
+}
+
+/* Footer for credits */
+#foot {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    color: black;
+    text-align: center;
+}
+
